@@ -1,0 +1,20 @@
+
+button{
+    padding: 20px;
+    background: var(--active-color);
+    border-radius: 10px;
+
+    font-family: inherit;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled{
+    background: var(--default-color);
+    cursor: default;
+}

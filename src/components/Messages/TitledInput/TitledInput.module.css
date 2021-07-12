@@ -1,0 +1,75 @@
+
+.input {
+    /*position: sticky;*/
+    /*z-index: 1;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*overflow: auto;*/
+
+    /*box-sizing: border-box;*/
+    /*padding: 20px 50px;*/
+    /*background: #1f1f1f;*/
+    /*box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.2);*/
+
+    /*display: grid;*/
+    /*grid-template-columns: 80% 1fr;*/
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 80% 1fr;
+    position: relative;
+
+}
+
+.input > .title {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    margin: -10px 20px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    background: #1f1f1f;
+
+    border-radius: 10px;
+}
+
+.input > textarea {
+    resize: none;
+    overflow-y: auto;
+
+    outline: none;
+    padding: 15px 20px;
+    box-sizing: border-box;
+
+    border-radius: 20px 0 0 20px;
+    border: 1px var(--outline-color) solid;
+
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color:whitesmoke;
+    background: none;
+}
+
+.input button {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0 20px 20px 0;
+    background: var(--active-color);
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 500;
+
+    border-top: 1px var(--outline-color) solid;
+    border-right: 1px var(--outline-color) solid;
+    border-bottom: 1px var(--outline-color) solid;
+    border-left: none;
+    outline: none;
+
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.input button:hover {
+    background: var(--active-hover-color);
+}

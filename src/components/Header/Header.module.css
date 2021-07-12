@@ -1,0 +1,78 @@
+header {
+    background: #1f1f1f;
+    height: var(--header-height);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    color: whitesmoke;
+    font-size: 1.25rem;
+    border-bottom: 2px #282828 solid;
+}
+
+.buttons > button:hover {
+    background: #202020;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+}
+.group > *{
+    margin-right: 30px;
+}
+
+.icons > *{
+    width: calc(var(--header-height) * 0.4);
+    height: calc(var(--header-height) * 0.4);
+
+    fill: var(--default-color);
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user > *:not(:last-child){
+    margin-right: 20px;
+}
+
+.user > .pic{
+    width: calc(var(--header-height) * 0.7);
+    height: calc(var(--header-height) * 0.7);
+    border-radius: 50%;
+
+    fill: var(--default-color);
+}
+
+.login,
+.logout{
+    background: var(--active-color);
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: whitesmoke;
+    padding: 10px 30px;
+    border-radius: 5px;
+
+    transition: .2s;
+}
+
+.logout{
+    outline: none;
+    border: none;
+    font-family: "Raleway",sans-serif;
+}
+
+
+
+.login:hover,
+.logout:hover{
+    background: var(--active-hover-color);
+}
+
+

@@ -1,0 +1,29 @@
+.status{
+    max-width: 1000px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    display: grid;
+    grid-row-gap: 10px;
+    padding: 10px;
+    min-height: 1.4rem;
+}
+
+.status:hover{
+    background: #282828;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.edit{
+    font-family: inherit;
+    font-size: 1.2rem;
+
+    outline: none;
+    background: none;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--active-color);
+    margin-bottom: 20px;
+}

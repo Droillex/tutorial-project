@@ -1,0 +1,23 @@
+:root {
+    --active-color: #6959c9;
+    --active-hover-color: #5749a6;
+    --default-color: #636363;
+
+    --error-color: rgb(180,0,0);
+
+    --header-height: 80px;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.simplebar-track > .simplebar-scrollbar::before {
+    background: var(--default-color);
+}
+
+/*Able to override toast styles here*/
+div.Toastify__toast--error {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(15deg, rgba(65,45,45,1) 60%, rgba(176,37,37,1) 100%);
+}

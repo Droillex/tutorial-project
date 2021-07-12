@@ -1,0 +1,34 @@
+.wrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.message {
+    max-width: 40%;
+    background: var(--default-color);
+    padding: 20px;
+    border-radius: 15px 15px 15px 0;
+
+    font-size: 1rem;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.date {
+    padding: 5px 0;
+    text-align: right;
+    font-size: 0.8rem;
+
+    /*font-style: italic;*/
+    /*font-weight: 500;*/
+}
+
+.wrapper.right {
+    right: 0;
+    justify-content: flex-end;
+}
+
+.wrapper.right > .message {
+    background: var(--active-color);
+    border-radius: 15px 15px 0 15px;
+}

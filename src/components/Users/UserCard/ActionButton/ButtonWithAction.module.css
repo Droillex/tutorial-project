@@ -1,0 +1,27 @@
+.follow {
+    font-family: 'Raleway', sans-serif;
+    background: var(--active-color);
+    color: whitesmoke;
+    font-size: inherit;
+    /*font-weight: 600;*/
+
+    padding: 20px 30px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.follow:disabled {
+    background: var(--default-color);
+    cursor: default;
+}
+
+.follow:hover:not(:disabled) {
+    background: var(--active-hover-color);
+}

@@ -1,0 +1,10 @@
+.posts{
+    font-size: 2rem;
+    font-weight: 400;
+    color:whitesmoke;
+}
+
+.input{
+    max-width: 800px;
+    padding: 30px 0;
+}

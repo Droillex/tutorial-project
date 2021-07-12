@@ -1,0 +1,16 @@
+.user{
+    display: flex;
+    height: 50px;
+    align-items: center;
+
+    color: var(--default-color);
+    fill: var(--default-color);
+
+    margin-bottom: 15px;
+}
+
+.user > .img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}

@@ -1,0 +1,51 @@
+.item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--default-color);
+    padding: 25px;
+    font-size: 0.9rem;
+
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+.item:not(.active):hover{
+    background: #282828;
+}
+
+.item > .underlay{
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    position: absolute;
+    z-index: -1;
+    border-radius: 15px;
+
+    background: var(--active-color);
+    transform-origin: center;
+    transform: scaleY(0);
+
+    transition: inherit;
+}
+
+.item > svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    fill: var(--default-color);
+
+    transition: inherit;
+}
+
+.item.active {
+    color: white;
+    cursor: default;
+}
+.item.active > svg {
+    fill: white;
+}
+.item.active > .underlay{
+    transform: scaleY(1);
+}

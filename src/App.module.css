@@ -1,0 +1,24 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    /*background: #1f1f1f;*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.right{
+    position: relative;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.content {
+    height: calc(100% - var(--header-height));
+    width: 100%;
+    background: #1f1f1f;
+    overflow-y: hidden;
+    position: relative;
+}

@@ -1,0 +1,59 @@
+.textInput {
+    position: relative;
+
+    border-radius: 10px;
+    border: #404040 2px solid;
+
+    padding: 14px 10px 10px 10px;
+    margin-bottom: 2px;
+
+    transition: 0.2s linear;
+}
+
+.textInput.error{
+    border: var(--error-color) 2px solid;
+}
+
+.textInput > label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+
+    background: #1f1f1f;
+    padding: 0 10px;
+    border-radius: 10px;
+
+    font-weight: 300;
+}
+
+.textInput > input{
+    border: none;
+    background: #202020;
+    outline: none;
+
+    color:whitesmoke;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.checkboxInput > input{
+    margin-right: 10px;
+}
+
+/*Some strange webkit stuff*/
+.textInput > input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #202020 inset;
+    -webkit-text-fill-color: whitesmoke !important;
+}
+
+.errorPopup {
+    text-align: center;
+    color: var(--error-color);
+    /*background: rgba(0,0,0,1);*/
+
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+    min-height: 40px;
+}

@@ -1,0 +1,90 @@
+.container{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-column-gap: 20px;
+    margin-bottom: 30px;
+}
+
+.title{
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    color:whitesmoke;
+    position: relative;
+}
+
+.tags{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.uploader{
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.photo{
+    width: 100%;
+    height: 100%;
+    fill: var(--default-color);
+}
+
+.uploader:hover > .load{
+    opacity: 1;
+}
+
+.uploader > input
+{
+    display: none;
+}
+
+.load{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    cursor: pointer;
+    font-size: 1.25rem;
+    opacity: 0;
+
+    transition: .5s;
+}
+
+.contacts{
+    display: flex;
+    margin-top: 15px;
+}
+
+.contacts > *
+{
+    width: 30px;
+    height: 30px;
+    fill: var(--default-color);
+
+    cursor: pointer;
+    transition: .2s;
+}
+.contacts > *:hover{
+    fill: whitesmoke;
+}
+
+.contacts > *:not(:last-child){
+    margin-right: 15px;
+}
